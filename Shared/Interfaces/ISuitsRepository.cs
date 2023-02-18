@@ -1,0 +1,17 @@
+﻿using Shared.Models;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Shared.Interfaces
+{
+    public interface ISuitsRepository
+    {
+        List<Suit> GetAllSuits();
+        int InsertSuit(Suit suit);
+        int UpdateSuit(Suit suit);
+        int DeleteSuit(int Id);
+    }
+}
